@@ -89,6 +89,13 @@ section {
   max-width: 1300px;
 }
 
+.link__icon {
+  border: none;
+  background-color: inherit;
+  width: min-content;
+  font-size: 30px;
+}
+
 /* home */
 
 .click-me-eng {
