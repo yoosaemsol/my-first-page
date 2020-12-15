@@ -65,22 +65,22 @@ nav ul li a:hover {
   width: 100px;
 }
 
-.link ul {
+.link {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   font-size: 30px;
 }
 
-.link ul li:first-child {
+.link a:first-child {
   margin-right: 13px;
 }
 
-.link ul li a i {
+.link a i {
   color: #e4e4e4;
 }
 
-.link ul li a i:hover {
+.link a i:hover {
   color: #cacaca;
 }
 
@@ -89,12 +89,13 @@ section {
   max-width: 1300px;
 }
 
-.link__icon {
+/* .link__icon {
+  height: 30px;
   border: none;
   background-color: inherit;
   width: min-content;
   font-size: 30px;
-}
+} */
 
 /* home */
 
