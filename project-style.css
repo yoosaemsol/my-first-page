@@ -143,3 +143,11 @@ nav ul li a:hover {
 
   background-image: url("./projects/youtube-clone.gif");
 }
+
+.todolist {
+  background-image: url("./projects/todolist.GIF");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+}
