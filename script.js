@@ -59,5 +59,39 @@ const callback = (entries, observer) => {
 };
 
 const observer = new IntersectionObserver(callback, options);
-
 sections.forEach((section) => observer.observe(section)); //section들을 관찰자가 관찰하도록 명령
+
+// aside On and Off
+// at footer
+const footerOptions = {
+  threshold: 0.5,
+};
+
+const handleFooter = (entries) => {
+  if (entries[0].isIntersecting) {
+    quickIconContainer.classList.add("show-off");
+  } else {
+    quickIconContainer.classList.remove("show-off");
+  }
+};
+
+const footerObserver = new IntersectionObserver(handleFooter, footerOptions);
+const footer = document.querySelector("footer");
+footerObserver.observe(footer);
+
+//at header
+const home = document.querySelector(".home");
+const homeOptions = {
+  threshold: 0.8,
+};
+
+const handleHome = (entries) => {
+  if (entries[0].isIntersecting) {
+    quickIconContainer.classList.add("show-off");
+  } else {
+    quickIconContainer.classList.remove("show-off");
+  }
+};
+
+const headerObserver = new IntersectionObserver(handleHome, homeOptions);
+headerObserver.observe(home);

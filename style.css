@@ -288,3 +288,9 @@ aside ul li:hover {
 .quick-icons li.icon-active::before {
   background-color: #e24849;
 }
+
+/* home, footer보일때 icons 비활성 */
+
+.quick-icons.show-off {
+  visibility: hidden;
+}
