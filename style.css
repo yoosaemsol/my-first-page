@@ -268,3 +268,23 @@ aside ul li {
 aside ul li:hover {
   transform: scale(1.3);
 }
+
+/* 위치알림 */
+.quick-icons li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.quick-icons li::before {
+  content: "";
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.quick-icons li.icon-active::before {
+  background-color: #e24849;
+}
