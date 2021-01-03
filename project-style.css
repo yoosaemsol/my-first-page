@@ -151,3 +151,11 @@ nav ul li a:hover {
   background-repeat: no-repeat;
   border-radius: 5px;
 }
+
+.squarespace {
+  background-image: url("./projects/squarespace-clone.GIF");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+}
